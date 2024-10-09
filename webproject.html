@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Corpora in classe </title> 
+		<meta charset="UTF-8">
+		<meta name="DC.Description" content="Homepage sito didattico per utilizzo corpora in classe">
+		<meta name="DC.Subject" content="corpus, classe, esercizi, istruzioni">
+		<meta name="DC.Creator" content="Martina Uccheddu">
+		<meta name="DC.Publisher" content="Altervista">
+		<meta name="DC.Date" content="2022-05-10">
+		<meta name="DC.Identifier" content="">
+		<meta name="DC.Language" content="it">
+		<meta name="DC.Rights" content="© Copyright (c) by Martina Uccheddu/Corso informatica umanistica 2021/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="icon" type="image/x-icon" href="immagini/favicon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img class="logo" src="immagini/logo.png" alt="Corpora in classe Logo"></a>
+		</header>
+		<nav class="topnav">
+			<ul>
+				<li><a href="index.html" title="Vai alla sezione Home"> HOME</a> </li>
+				<li><a href="list-item.html" title="Vai alla sezione Catalogo"> CATALOGO</a></li>
+				<li><a href="esercizi.html" title="Vai alla sezione Esercizi">ESERCIZI</a></li>
+				<div class="login-container">
+						    <form action="/action_page.php">
+						      <input type="text" placeholder="Username" name="username">
+						      <input type="text" placeholder="Password" name="psw">
+						      <button type="submit">Login</button>
+						    </form>
+				</div>
+			</ul>
+		</nav>
+		<section>
+			<div class="row3">
+				<div class="column3 left">
+					<ul class="breadcrumb">
+			            <li><a href="index.html">Home</a></li>
+			            <li>Web Project Plan</li>
+          			</ul>
+				</div>
+				<div class="column3 right">
+					<div class="tab">
+					  <button class="tablinks" onclick="openCity(event, 'brief')">Brief</button>
+					  <button class="tablinks" onclick="openCity(event, 'benchmark')">Benchmark</button>
+					  <button class="tablinks" onclick="openCity(event, 'struttura')">Struttura</button>
+					  <button class="tablinks" onclick="openCity(event, 'layout')">Layout</button>
+					  <button class="tablinks" onclick="openCity(event, 'usabilita')">Usabilità</button>
+					  <button class="tablinks" onclick="openCity(event, 'servizi')">Servizi</button>
+					  <button class="tablinks" onclick="openCity(event, 'bibliografia')">Biblio/sitografia</button>
+					</div>
+	
+					<div id="brief" class="tabcontent">
+						<div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/Brief.pdf"></iframe>
+						</div>
+					</div>
+
+					<div id="benchmark" class="tabcontent">
+					  <div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/Benchmark.pdf"></iframe>
+						</div>
+					 
+					</div>
+
+					<div id="struttura" class="tabcontent">
+						<div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/Struttura.pdf"></iframe>
+						</div>
+					</div>
+
+					<div id="layout" class="tabcontent">
+						<div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/Layout.pdf"></iframe>
+						</div>
+					</div>
+
+					<div id="usabilita" class="tabcontent">
+						<div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/Usabilita.pdf"></iframe>
+						</div>
+					</div>
+					<div id="servizi" class="tabcontent">
+						<div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/Servizi.pdf"></iframe>
+						</div>
+					</div>
+					<div id="bibliografia" class="tabcontent">
+						<div class="containerPDF">
+  							<iframe class="responsive-iframe" src="PDF/bibliositografia.pdf"></iframe>
+						</div>
+					</div>
+				</div>
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			</div>
+			<script type="text/javascript">//Get the button:
+			mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0; // For Safari
+			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+			</script>
+		</section>
+		<footer>
+			<div class="contatti">
+				<a href="">Contatti</a> | <a href="">Feedback</a> | <a href="webproject.html" title="Vai al Web Project Plan">Web Project Plan</a> | <a href=""> Registrarsi </a>
+			</div>
+			<div class="socialmedia">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+			<div class= "copyrights">
+				<p> &copy; Copyright (c) by Martina Uccheddu/Corso informatica umanistica 2021/2022
+			</div>
+		</footer>
+	</body>
+</html>

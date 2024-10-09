@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Corpora in classe </title>
+		<meta charset="UTF-8">
+		<meta name="DC.Description" content="Homepage sito didattico per utilizzo corpora in classe">
+		<meta name="DC.Subject" content="corpus, classe, esercizi, istruzioni">
+		<meta name="DC.Creator" content="Martina Uccheddu">
+		<meta name="DC.Publisher" content="Altervista">
+		<meta name="DC.Date" content="2022-05-10">
+		<meta name="DC.Identifier" content="">
+		<meta name="DC.Language" content="it">
+		<meta name="DC.Rights" content="© Copyright (c) by Martina Uccheddu/Corso informatica umanistica 2021/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="icon" type="image/x-icon" href="immagini/favicon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img class="logo" src="immagini/logo.png" alt="Corpora in classe Logo"></a>
+		</header>
+		<nav class="topnav">
+			<ul>
+				<li><a href="index.html" title="Vai alla sezione Home"> HOME</a> </li>
+				<li><a class="active" href="list-item.html" title="Vai alla sezione Catalogo"> CATALOGO </a></li>
+				<li><a href="esercizi.html" title="Vai alla sezione Esercizi">ESERCIZI</a></li>
+				<div class="login-container">
+						    <form action="/action_page.php">
+						      <input type="text" placeholder="Username" name="username">
+						      <input type="text" placeholder="Password" name="psw">
+						      <button type="submit">Login</button>
+						    </form>
+				</div>
+			</ul>
+		</nav>
+		<!--SISTEMA A COLONNE-->
+		<section>
+			<div class="row3">
+				<div class="column3 left">
+					<ul class="breadcrumb">
+			            <li><a href="index.html">Home</a></li>
+			            <li>Catalogo</li>
+          			</ul>
+				</div>
+				<div class="column3 right">
+					<div class="tab">
+					  <button class="tablinks" onclick="openCity(event, 'moderno')">Corpora di italiano moderno</button>
+					  <button class="tablinks" onclick="openCity(event, 'antico')">Corpora di italiano antico</button>
+					  <button class="tablinks" onclick="openCity(event, 'scritta')">Corpora di lingua scritta</button>
+					  <button class="tablinks" onclick="openCity(event, 'parlata')">Corpora di lingua parlata</button>
+					  <button class="tablinks" onclick="openCity(event, 'misti')">Corpora misti</button>
+					</div>
+
+					<!-- Tab content -->
+					<div id="moderno" class="tabcontent">
+						<div class="row4">
+							<form>
+  								<input type="text" name="search" placeholder="Search..">
+							</form>
+							<div class="column4">
+					  	 		<div class="card">
+					  	 			<img src="immagini/coris.jpg" alt="schermataCoris" class="coris"></img>
+						  				<div class="container">
+						   	 				<h4><b><a href="item.html" title="Vai a corpus">CORIS</a></b></h4>
+						    				<p>Corpus di Italiano Scritto contemporaneo ricco di circa 100 milioni di parole. Elaborato e prodotto dal Centro Interfacoltà di Linguistica Teorica e Applicata (CILTA) "Luigi Heilmann" dell'Universita' di Bologna, prevede una licenza per l'accesso alla versione completa.</p>
+						  				</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/colfis.png" alt="interfacciacolfis" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>CoLFIS</b></h4>
+								    	<p>Il corpus di riferimento è costituito da testi tratti da quotidiani del periodo 1992 - 1994 (La Repubblica, La Stampa, Il Corriere della Sera), periodici e libri, considerando anche i libri letti per motivi scolastici o professionali. Consta di 3.150.075 ricorrenze lessicali. Al progetto partecipano i seguenti soggetti: Scuola Normale Superiore (Pisa), Istituto di Scienze e Tecnologie della Cognizione del CNR (Roma), Università di Salerno, Istituto di Linguistica Computazionale, Unità Staccata di Genova del CNR, Università de L'Aquila.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/repubblica.png" alt="interfacciarepubblica" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>La Repubblica</b></h4>
+								    	<p>Corpus molto ampio (circa 380mila parole) del lessico del quotidiano la Repubblica. Nel progetto, curato dall'Università di Bologna, il corpus è stato lemmatizzato, taggato e categorizzato per genere e topic; gli articoli nel corpus sono strutturati nelle seguenti parti:titolo, sottotitolo, sommario, testo.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row4">
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/LIP.png" alt="interfaccialip" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>LIP</b></h4>
+						    			<p>il corpus LIP, ospitato sul sito della Banca Dati dell'Italiano Parlato (BaDIP), è la raccolta di testi dell'italiano parlato più importante e più utilizzata nella ricerca linguistica. Costituito nel 1990-1992 da un gruppo di linguisti diretto da Tullio De Mauro, serví per costruire il primo lessico di frequenza dell' italiano parlato. I suoi 469 testi, contenenti complessivamente ca. 490.000 parole, furono raccolti in quattro città (Milano, Firenze, Roma e Napoli) e provengono da cinque macroclassi e numerose sottoclassi di discorso.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/clips.png" alt="interfacciaclips" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>CLIPS</b></h4>
+								    	<p>Ampio progetto coordinato dal prof. Federico Albano Leoni (CIRASS - Napoli) cui hanno partecipato l' Univ. "Federico II" di Napoli, la Scuola Normale Sup. di Pisa, la Fondazione Bordoni di Roma, e l' Ist. Sup. Poste e Telecomunicazioni, ora ISCOM. Autori ne sono i proff. F. A. Leoni, F. Cutugno e R Savy.
+										Pubblicato nel 2006, contiene circa 100 ore di italiano parlato di varie tipologie suddiviso in 5 sottocorpora (radiotelevisivo, dialogico, letto, ortofonico, telefonico). Attraverso un'indagine sociolinguistica preliminare sul territorio italiano, sono state selezionate 15 città dove sono stati raccolti i materiali per la costituzione del corpus.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/cordic.png" alt="interfacciacordic" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>CorDIC</b></h4>
+						    			<p>LABLITA (Laboratorio Linguistico Italiano dell'Università di Firenze)
+										Corpora di italiano scritto e parlato da confrontare a scopo didattico; contiene circa un milione di parole divise tra testi e parlato spontaneo. È liberamente consultabile online.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/KIparla.png" alt="interfacciaclips" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>KIParla</b></h4>
+								    	<p>Caterina Mauri (Università di Bologna), Eugenio Goria, Silvia Ballarè e Massimo Cerruti (Università di Torino)
+										Corpus di parlato registrato a Bologna e a Torino; comprende vari tipi d'interazione verbale fra parlanti con differente profilo sociolinguistico. I materiali sono consultabili in formato audio e in forma di trascrizione testuale allineata. </p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/meta.png" alt="interfacciametamotore" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>Metamotore</b></h4>
+						    			<p>Accademia della Crusca
+										Motore di ricerca che consente di interrogare contemporaneamente le tre banche dati (LessicoItalianoScritto, LessicoItalianoRadiofonico, LessicoItalianoTelevisivo) dell'Accademia della Crusca, per ottenere risultati di spettro più ampio e completo sulla lingua italiana contemporanea. </p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="center">
+								<div class="pagination">
+									<a href="#">&laquo;</a>
+									<a class="active" href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">&raquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="antico" class="tabcontent">
+					  <div class="row4">
+					  		<form>
+  								<input type="text" name="search" placeholder="Search..">
+							</form>
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/datini.png" alt="interfacciadatini" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>Archivio Dantini</b></h4>
+						    			<p>Corpus lemmatizzato, a cura dell'Opera del Vocabolario Italiano, del carteggio di Francesco Datini (1335-1410) composto da quasi 150.000 lettere e completo di commento in cui sono inseriti rimandi alle note editoriali.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/taurinese.png" alt="interfacciataurinese" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>Corpus Taurinense</b></h4>
+								    	<p>Raccolta di testi fiorentini del XIII secolo, ordinata per lemmi, parti del discorso, genere letterario e forme filologiche. Direzione scientifica di Manuel Barbera e Carla Marello.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/duecento.png" alt="interfacciaduecento" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>Duecento</b></h4>
+								    	<p>Archivio di testi digitalizzati della lirica italiana duecentesca curata dal 1993 da Andrea Bonomi. Il corpus è ricco di oltre 2.400 opere di oltre 200 autori tra maggiori e minori. È disponibile un motore di ricerca per la ricerca deli termini nei testi, con indice delle frequenze.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/ovi.png" alt="interfacciaovi" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>OVI</b></h4>
+								    	<p>Raccolta completa dei testi italiani antichi resi accessibili dall'Opera del Vocabolario Italiano (OVI), ricca di 23 milioni di occorrenze per più di 450.000 forme grafiche distinte. Consente di scaricare brevi citazioni per uso di ricerca ma è vietato scaricare i testi. Direzione scientifica di Pär Larson, Elena Artale e Diego Dotto.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="center">
+								<div class="pagination">
+									<a href="#">&laquo;</a>
+									<a class="active" href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">&raquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="scritta" class="tabcontent">
+						<div class="row4">
+							<form>
+  								<input type="text" name="search" placeholder="Search..">
+							</form>
+							<div class="column4">
+					  	 		<div class="card">
+					  	 			<img src="immagini/coris.jpg" alt="schermataCoris" class="coris"></img>
+						  				<div class="container">
+						   	 				<h4><b><a href="item.html" title="Vai a corpus">CORIS</a></b></h4>
+						    				<p>Corpus di Italiano Scritto contemporaneo ricco di circa 100 milioni di parole. Elaborato e prodotto dal Centro Interfacoltà di Linguistica Teorica e Applicata (CILTA) "Luigi Heilmann" dell'Universita' di Bologna, prevede una licenza per l'accesso alla versione completa.</p>
+						  				</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/colfis.png" alt="interfacciacolfis" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>CoLFIS</b></h4>
+								    	<p>Il corpus di riferimento è costituito da testi tratti da quotidiani del periodo 1992 - 1994 (La Repubblica, La Stampa, Il Corriere della Sera), periodici e libri, considerando anche i libri letti per motivi scolastici o professionali. Consta di 3.150.075 ricorrenze lessicali. Al progetto partecipano i seguenti soggetti: Scuola Normale Superiore (Pisa), Istituto di Scienze e Tecnologie della Cognizione del CNR (Roma), Università di Salerno, Istituto di Linguistica Computazionale, Unità Staccata di Genova del CNR, Università de L'Aquila.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/repubblica.png" alt="interfacciarepubblica" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>La Repubblica</b></h4>
+								    	<p>Corpus molto ampio (circa 380mila parole) del lessico del quotidiano la Repubblica. Nel progetto, curato dall'Università di Bologna, il corpus è stato lemmatizzato, taggato e categorizzato per genere e topic; gli articoli nel corpus sono strutturati nelle seguenti parti:titolo, sottotitolo, sommario, testo.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/datini.png" alt="interfacciadatini" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>Archivio Dantini</b></h4>
+						    			<p>Corpus lemmatizzato, a cura dell'Opera del Vocabolario Italiano, del carteggio di Francesco Datini (1335-1410) composto da quasi 150.000 lettere e completo di commento in cui sono inseriti rimandi alle note editoriali.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/taurinese.png" alt="interfacciataurinese" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>Corpus Taurinense</b></h4>
+								    	<p>Raccolta di testi fiorentini del XIII secolo, ordinata per lemmi, parti del discorso, genere letterario e forme filologiche. Direzione scientifica di Manuel Barbera e Carla Marello.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/duecento.png" alt="interfacciaduecento" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>Duecento</b></h4>
+								    	<p>Archivio di testi digitalizzati della lirica italiana duecentesca curata dal 1993 da Andrea Bonomi. Il corpus è ricco di oltre 2.400 opere di oltre 200 autori tra maggiori e minori. È disponibile un motore di ricerca per la ricerca deli termini nei testi, con indice delle frequenze.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/ovi.png" alt="interfacciaovi" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>OVI</b></h4>
+								    	<p>Raccolta completa dei testi italiani antichi resi accessibili dall'Opera del Vocabolario Italiano (OVI), ricca di 23 milioni di occorrenze per più di 450.000 forme grafiche distinte. Consente di scaricare brevi citazioni per uso di ricerca ma è vietato scaricare i testi. Direzione scientifica di Pär Larson, Elena Artale e Diego Dotto.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="center">
+								<div class="pagination">
+									<a href="#">&laquo;</a>
+									<a class="active" href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">&raquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="parlata" class="tabcontent">
+						<div class="row4">
+							<form>
+  								<input type="text" name="search" placeholder="Search..">
+							</form>
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/LIP.png" alt="interfaccialip" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>LIP</b></h4>
+						    			<p>il corpus LIP, ospitato sul sito della Banca Dati dell'Italiano Parlato (BaDIP), è la raccolta di testi dell'italiano parlato più importante e più utilizzata nella ricerca linguistica. Costituito nel 1990-1992 da un gruppo di linguisti diretto da Tullio De Mauro, serví per costruire il primo lessico di frequenza dell' italiano parlato. I suoi 469 testi, contenenti complessivamente ca. 490.000 parole, furono raccolti in quattro città (Milano, Firenze, Roma e Napoli) e provengono da cinque macroclassi e numerose sottoclassi di discorso.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/clips.png" alt="interfacciaclips" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>CLIPS</b></h4>
+								    	<p>Ampio progetto coordinato dal prof. Federico Albano Leoni (CIRASS - Napoli) cui hanno partecipato l' Univ. "Federico II" di Napoli, la Scuola Normale Sup. di Pisa, la Fondazione Bordoni di Roma, e l' Ist. Sup. Poste e Telecomunicazioni, ora ISCOM. Autori ne sono i proff. F. A. Leoni, F. Cutugno e R Savy.
+										Pubblicato nel 2006, contiene circa 100 ore di italiano parlato di varie tipologie suddiviso in 5 sottocorpora (radiotelevisivo, dialogico, letto, ortofonico, telefonico). Attraverso un'indagine sociolinguistica preliminare sul territorio italiano, sono state selezionate 15 città dove sono stati raccolti i materiali per la costituzione del corpus.</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+								<div class="card">
+								  <img src="immagini/KIparla.png" alt="interfacciaclips" class="coris">
+								  	<div class="container">
+								   	 	<h4><b>KIParla</b></h4>
+								    	<p>Caterina Mauri (Università di Bologna), Eugenio Goria, Silvia Ballarè e Massimo Cerruti (Università di Torino)
+										Corpus di parlato registrato a Bologna e a Torino; comprende vari tipi d'interazione verbale fra parlanti con differente profilo sociolinguistico. I materiali sono consultabili in formato audio e in forma di trascrizione testuale allineata. </p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="center">
+								<div class="pagination">
+									<a href="#">&laquo;</a>
+									<a class="active" href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">&raquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="misti" class="tabcontent">
+					  <div class="row4">
+					  		<form>
+  								<input type="text" name="search" placeholder="Search..">
+							</form>
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/cordic.png" alt="interfacciacordic" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>CorDIC</b></h4>
+						    			<p>LABLITA (Laboratorio Linguistico Italiano dell'Università di Firenze)
+										Corpora di italiano scritto e parlato da confrontare a scopo didattico; contiene circa un milione di parole divise tra testi e parlato spontaneo. È liberamente consultabile online.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/meta.png" alt="interfacciametamotore" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>Metamotore</b></h4>
+						    			<p>Accademia della Crusca
+										Motore di ricerca che consente di interrogare contemporaneamente le tre banche dati (LessicoItalianoScritto, LessicoItalianoRadiofonico, LessicoItalianoTelevisivo) dell'Accademia della Crusca, per ottenere risultati di spettro più ampio e completo sulla lingua italiana contemporanea. </p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="column4">
+					  	 		<div class="card">
+						 			<img src="immagini/diacoris.png" alt="interfacciadiacoris" class="coris"></img>
+						  			<div class="container">
+						   	 			<h4><b>DiaCORIS</b></h4>
+						    			<p>Rema Rossini Favretti, Alma Mater Studiorum - Università di Bologna
+										Corpus diacronico dell'italiano scritto, comprendente testi prodotti tra il 1861 e il 2001. È liberamente consultabile online.</p>
+						  			</div>
+								</div>
+							</div>
+						</div>
+						<div class="row4">
+							<div class="center">
+								<div class="pagination">
+									<a href="#">&laquo;</a>
+									<a class="active" href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">&raquo;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<script type="text/javascript">//Get the button:
+			mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0; // For Safari
+			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+			</script>
+		</section>
+		<footer>
+			<div class="contatti">
+				<a href="">Contatti</a> | <a href="">Feedback</a> | <a href="webproject.html" title="Vai al Web Project Plan">Web Project Plan</a> | <a href=""> Registrarsi </a>
+			</div>
+			<div class="socialmedia">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+			<div class= "copyrights">
+				<p> &copy; Copyright (c) by Martina Uccheddu/Corso informatica umanistica 2021/2022
+			</div>
+		</footer>
+	</body>
+</html>

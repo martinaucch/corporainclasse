@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Corpora in classe </title> 
+		<meta charset="UTF-8">
+		<!--DUBLIN CORE-->	
+		<meta name="DC.Description" content="Homepage sito didattico per utilizzo corpora in classe">
+		<meta name="DC.Subject" content="corpus, classe, esercizi, istruzioni">
+		<meta name="DC.Creator" content="Martina Uccheddu">
+		<meta name="DC.Publisher" content="Altervista">
+		<meta name="DC.Date" content="2022-05-10">
+		<meta name="DC.Identifier" content="">
+		<meta name="DC.Language" content="it">
+		<meta name="DC.Rights" content="© Copyright (c) by Martina Uccheddu/Corso informatica umanistica 2021/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="style/style.css">
+		<!--FONT-->
+		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+		<!--ICONE FLIP CARD-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!--ICONE SOCIAL MEDIA E SEARCH BAR-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--ICONA FAVICON-->
+		<link rel="icon" type="image/x-icon" href="immagini/favicon.ico">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img class="logo" src="immagini/logo.png" alt="Corpora in classe Logo"></a>
+		</header>
+		<nav class="topnav">
+			<ul>
+				<li><a class="active" href="index.html" title="Vai alla sezione Home"> HOME</a> </li>
+				<li><a href="list-item.html" title="Vai alla sezione Catalogo"> CATALOGO</a></li>
+				<li><a href="esercizi.html" title="Vai alla sezione Esercizi">ESERCIZI</a></li>
+					<div class="login-container">
+						    <form action="/action_page.php">
+						      <input type="text" placeholder="Username" name="username">
+						      <input type="text" placeholder="Password" name="psw">
+						      <button type="submit">Login</button>
+						    </form>
+					</div>
+			</ul>
+		</nav>
+		<!--Funzione js per rendere navbar sticky-->		
+		<script type="text/javascript">// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+			    navbar.classList.add("sticky")
+			  } else {
+			    navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
+		<!--sistema righe/colonne-->		
+		<section>
+			<div class="ilprogetto">
+				<h2>Il progetto in pillole</h2>
+				<div class="row1">
+					<div class="column1">
+						<div class="flip-card">
+						<div class="flip-card-inner">
+						    <div class="flip-card-front">
+						    	<h3>Perch&eacute;?</h3>
+						    	<i class="material-icons">chat_bubble_outline</i>
+						    </div>
+						    <div class="flip-card-back">
+						      <p>Fornire uno strumento didattico utile per l’utilizzo di corpora linguistici in ambito glottodidattico.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="column1">	
+						<div class="flip-card">
+						<div class="flip-card-inner">
+						    <div class="flip-card-front">
+						     	<h3>Per chi?</h3>
+						    	<i class="material-icons">accessibility</i>
+						    </div>
+						    <div class="flip-card-back">
+						      <p>Studenti ed insegnanti di classi di lingua italiana.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="column1">
+						<div class="flip-card">
+						<div class="flip-card-inner">
+						    <div class="flip-card-front">
+						      	<h3>Come?</h3>
+						    	<i class="material-icons">class</i>
+						    </div>
+						    <div class="flip-card-back">
+						   		<p>Raccoglie in modo chiaro e sintetico i corpora di italiano scritto e parlato accompagnandoli con un video di istruzioni e una serie di esercizi correlati.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class= "catalogo">
+				<h2>Il catalogo</h2>
+				<p>I corpora presenti nel catalogo sono organizzati secondo alcuni parametri di classificazione.</p>
+				<div class="row2">
+					<div class="column2" onclick="openTab('b1');" style="background-color:#d6cbd3">
+						<h3>Corpora di italiano antico</h3>
+					</div>
+					<div class="column2" onclick="openTab('b2');"  style="background-color:#eca1a6">
+						<h3>Corpora di italiano moderno</h3>
+					</div>
+					<div class="column2" onclick="openTab('b3');" style="background-color:#b5e7a0">
+						<h3>Corpora di lingua scritta</h3>	
+					</div>
+					<div class="column2" onclick="openTab('b4');" style="background-color:#86af49">
+						<h3>Corpora di lingua parlata</h3>
+					</div>
+					<div class="column2" onclick="openTab('b5');" style="background-color:#eea29a">
+						<h3>Corpora misti</h3>
+					</div>
+				</div>
+				<div id="b1" class="containerTab" style="background-color:#d6cbd3">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+					<h3>Corpora di italiano antico</h3>
+					<p>In questa categoria troviamo raccolti tutti i corpora di italiano antico presenti on-line.</p>
+				</div>
+
+				<div id="b2" class="containerTab" style="background-color:#eca1a6">
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+				  <h3>Corpora di italiano moderno</h3>
+				  <p>In questa categoria troviamo raccolti tutti i corpora di italiano moderno e contemporaneo presenti on-line.</p>
+				</div>
+
+				<div id="b3" class="containerTab" style="background-color:#b5e7a0">
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+				  <h3>Corpora di lingua scritta</h3>
+				  <p>In questa categoria troviamo raccolti tutti i corpora di italiano scritto presenti on-line.</p>
+				</div>
+
+				<div id="b4" class="containerTab" style="background-color:#86af49">
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+				  <h3>Corpora di lingua parlata</h3>
+				  <p>In questa categoria troviamo raccolti tutti i corpora di italiano parlato presenti on-line.</p>				</div>
+				<div id="b5" class="containerTab" style="background-color:#eea29a">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+					<h3>Corpora mista</h3>
+					<p>In questa categoria troviamo raccolti tutti i corpora presenti on-line che raccolgono sia testi scritto che parlato e/o che coprono un periodo della lingua molto esteso, dall'italiano antico a quello contemporaneo.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<h2>Esercizi</h2>
+					<p>Gli esercizi sono distinti a seconda della classe di studenti a cui vengono proposti.
+					</p>
+					<div class="slideshow-container">
+						  <div class="mySlides fade">
+						    <div class="numbertext">1 / 3</div>
+						    <img src="immagini/studentiscuoleprimogrado.jpg" alt="CLASSI SCUOLE SECONDARIE 1O GRADO">
+						    <div class="text">CLASSI SCUOLE SECONDARIE PRIMO GRADO</div>
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">2 / 3</div>
+						    <img src="immagini/studentiscuolesecondogrado.jpg" alt="CLASSI SCUOLE SECONDARIE 2O GRADO">
+						    <div class="text">CLASSI SCUOLE SECONDARIE SECONDO GRADO</div>
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">3 / 3</div>
+						    <img src="immagini/studentiitalianol2.jpg" alt="CLASSI DI APPRENDENTI ITALIANO (L2)">
+						    <div class="text">CLASSI DI APPRENDENTI ITALIANO (L2)</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+						<br>
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						  <span class="dot" onclick="currentSlide(3)"></span>
+						</div>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<!--script per image carousel 3a riga-->
+			<script> var slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+					      slides[i].style.display = "none";
+					  }
+					  for (i = 0; i < dots.length; i++) {
+					      dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " active";
+					}
+			</script>
+			<!--script per top button allo scorrimento della pagina verso il basso-->
+			<script type="text/javascript">
+			//Get the button:
+			mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0; // For Safari
+			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+			</script>
+		</section>
+		<footer>
+			<div class="contatti">
+				<a href="">Contatti</a> | <a href="">Feedback</a> | <a href="webproject.html" title="Vai al Web Project Plan">Web Project Plan</a> | <a href=""> Registrarsi </a>
+			</div>
+			<div class="socialmedia">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+			<div class= "copyrights">
+				<p> &copy; Copyright (c) by Martina Uccheddu/Corso informatica umanistica 2021/2022
+			</div>
+		</footer>
+	</body>
+</html>
